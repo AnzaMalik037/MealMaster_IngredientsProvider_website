@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/indexStyle.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="name">Meal Master</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recipes">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meal Boxes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <!-- Add more navbar items here -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Show Case Trending Meals-->  
+    <section class="p-5 text-center showcase">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>Trending Meal Box 1</h2>
+                <img src="images/food1.jpg" alt="food1 here">
+                <p>Trending Meal Box 1 one line description</p>
+                <button class="btn">Order Now</button>
+                <button class="btn">View recipe</button>
+              </div>
+              <div class="carousel-item">
+                <h2>Trending Meal Box 2</h2>
+                <img src="images/food1.jpg" alt="food1 here">
+                <p>Trending Meal Box 2 one line description</p>
+                <button class="btn">Order Now</button>
+                <button class="btn">View recipe</button>
+              </div>
+              <div class="carousel-item">
+                <h2>Trending Meal Box 3</h2>
+                <img src="images/food1.jpg" alt="food1 here">
+                <p>Trending Meal Box 3 one line description</p>
+                <button class="btn">Order Now</button>
+                <button class="btn">View recipe</button>
+              </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+    </section>
+
+
+
+
+    <!-- Search for recipes-->
+    <section class="py-5 text-center search-container" id="recipes">
+        <input type="text" placeholder="Search...">
+        <button class="searchbtn" type="submit">Search</button>
+        <button class="searchbtn btn-primary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Preference Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+            <li><a class="dropdown-item dropdown-toggle" href="#" id="CuisinesDropdown">Cuisines</a>
+                <ul class="dropdown-menu" aria-labelledby="CuisinesDropdown">
+                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                    <li><a class="dropdown-item" href="#">Japanese</a></li>
+                    <li><a class="dropdown-item" href="#">Mexican</a></li>
+                    <li><a class="dropdown-item" href="#">Indian</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-item dropdown-toggle" href="#" id="DietaryPrefDropdown">Dietary Preferences</a>
+                <ul class="dropdown-menu" aria-labelledby="CuisinesDropdown">
+                    <li><a class="dropdown-item" href="#">Vegan</a></li>
+                    <li><a class="dropdown-item" href="#">Keto</a></li>
+                    <li><a class="dropdown-item" href="#">Paleo</a></li>
+                    <li><a class="dropdown-item" href="#">Gluten-free</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#" id="skillLevelDropdown">Skill Levels</a>
+                <ul class="dropdown-menu" aria-labelledby="skillLevelDropdown">
+                    <li><a class="dropdown-item" href="#">Novice</a></li>
+                    <li><a class="dropdown-item" href="#">Intermediate</a></li>
+                    <li><a class="dropdown-item" href="#">Expert</a></li>
+                </ul>
+            </li>
+        </ul>        
+    </section>
+    
+
+
+    <!-- cuisines, dietary preferences, and skill levels -->
+    <section class="px-2 text-center recipes">
+
+        <div class="row">
+            <div class="col-md-4">
+              <div class="m-3 card cell1">
+                <img class="img-fluid" src="images/food1.jpg" alt="food1">
+                <div class="card-body">
+                  <h5 class="card-title">Sushi</h5>
+                  <p class="card-text">This is the content of card 1.</p>
+                  <div>                      
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <button class="cardbtn"  onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="m-3 card cell2">
+                <img class="img-fluid" src="images/ramen.jpg" alt="food1">
+                <div class="card-body">
+                  <h5 class="card-title">Ramen</h5>
+                  <p class="card-text">This is the content of card 2.</p>
+                  <div>                      
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <button class="cardbtn"  onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="m-3 card cell3">
+                <img class="img-fluid" src="images/ramen.jpg" alt="food1">
+                <div class="card-body">
+                  <h5 class="card-title">Card 3</h5>
+                  <p class="card-text">This is the content of card 3.</p>
+                  <div>                      
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <button class="cardbtn" onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="m-3 card cell2">
+                  <img class="img-fluid" src="images/ramen.jpg" alt="food1">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">This is the content of card 2.</p>
+                    <div>                      
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <button class="cardbtn" onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="m-3 card cell3">
+                  <img class="img-fluid" src="images/ramen.jpg" alt="food1">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">This is the content of card 3.</p>
+                    <div>                      
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <button class="cardbtn"  onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="m-3 card cell2">
+                  <img class="img-fluid" src="images/ramen.jpg" alt="food1">
+                  <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">This is the content of card 2.</p>
+                    <div>                      
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <button class="cardbtn" onclick="viewRecipe()">View recipe</button><button class="cardbtn"> Order now</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <!--Navigation Buttons-->
+    <button class="mx-5 p-3 cardbtn pagerBtnPre" href="#"><- &nbsp; Previous</button>
+    <button class="mx-5 p-3 cardbtn pagerBtnNext" href="#">Next &nbsp; -></button>
+    
+
+    <button class="backOnTop" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div style="padding:30px 30px 150px"></div>
+
+
+    <script src="scripts/indexScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
